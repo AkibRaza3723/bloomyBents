@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { MessageCircle, Tag, ArrowLeft } from "lucide-react";
@@ -12,13 +13,28 @@ export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
 }
 
-export async function generateMetadata(props: PageProps<"/products/[slug]">) {
+export async function generateMetadata(props: PageProps<"/products/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const product = getProductBySlug(slug);
   if (!product) return {};
   return {
-    title: `${product.name} — Bloomy Bents`,
+    title: product.name,
     description: product.shortDesc,
+    alternates: {
+      canonical: `/products/${product.slug}`,
+    },
+    openGraph: {
+      title: `${product.name} — Bloomy Bents`,
+      description: product.shortDesc,
+      url: `/products/${product.slug}`,
+      images: product.image ? [{ url: product.image, alt: product.name }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} — Bloomy Bents`,
+      description: product.shortDesc,
+      images: product.image ? [product.image] : [],
+    },
   };
 }
 
@@ -27,8 +43,32 @@ export default async function ProductDetailPage(props: PageProps<"/products/[slu
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    image: product.image,
+    category: product.category,
+    brand: {
+      "@type": "Brand",
+      name: "Bloomy Bents",
+    },
+    offers: {
+      "@type": "Offer",
+      price: product.price,
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      url: `https://bloomybents.com/products/${product.slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <Navbar />
       <main className="pt-20 sm:pt-24 pb-12 sm:pb-16 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
