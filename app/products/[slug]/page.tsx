@@ -8,6 +8,8 @@ import { Footer } from "@/components/footer";
 import { ReviewsSection } from "@/components/reviews-section";
 import { products, getProductBySlug } from "@/lib/data";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
+import { siteUrl } from "@/lib/site";
+
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -59,7 +61,7 @@ export default async function ProductDetailPage(props: PageProps<"/products/[slu
       price: product.price,
       priceCurrency: "INR",
       availability: "https://schema.org/InStock",
-      url: `https://bloomybents.com/products/${product.slug}`,
+      url: `${siteUrl}/products/${product.slug}`,
     },
   };
 

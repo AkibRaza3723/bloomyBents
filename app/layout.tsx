@@ -9,8 +9,8 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-cormorant",
 });
+import { siteUrl } from "@/lib/site";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bloomybents.com";
 
 export const viewport: Viewport = {
   width: "device-width",
