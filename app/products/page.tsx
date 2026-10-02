@@ -36,32 +36,32 @@ export default function ProductsPage() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium tracking-widest uppercase mb-3 sm:mb-4">
                 <Sparkles className="w-3.5 h-3.5 text-primary" />
-                Catalog & Bespoke
+                Catalog & Bespoke Creations
               </div>
 
               <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground tracking-tight leading-[1.15]">
-                You choose a ready-made bouquet,{" "}
+                Choose a ready-sculpted bouquet,{" "}
                 <span className="text-primary italic font-serif font-normal block sm:inline">
-                  or be the creator.
+                  or design your own.
                 </span>
               </h1>
 
               <p className="text-muted-foreground mt-3 sm:mt-4 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
-                Transform your emotions into a bouquet. Every flower hand-picked, every arrangement made with love.
+                Everlasting flowers sculpted petal by petal from soft pipe cleaners by founder Sufia Ansari. Tactile art made to stay vibrant forever.
               </p>
 
               <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 mt-5 sm:mt-6 pt-4 sm:pt-6 border-t border-border/60 text-xs sm:text-sm text-foreground/80 font-medium">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  100% Fresh Stems
+                  100% Hand-Sculpted
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  Complimentary Note
+                  Everlasting Blooms
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  Hand-tied with Care
+                  Bendable & Customisable
                 </div>
               </div>
             </div>
@@ -81,10 +81,10 @@ export default function ProductsPage() {
 
                   <div>
                     <h2 className="font-display text-xl sm:text-2xl font-semibold text-foreground">
-                      Design Your Own Bouquet
+                      Design Your Custom Bouquet
                     </h2>
                     <p className="text-xs sm:text-sm text-muted-foreground mt-1.5 sm:mt-2 leading-relaxed">
-                      Have a specific color palette, favourite flowers, or special occasion? Tell us what you envision and we&apos;ll handcraft it for you.
+                      Have a specific color scheme, favourite flower, or special gift in mind? Sufia will hand-twist and sculpt a unique pipe cleaner arrangement just for you.
                     </p>
                   </div>
 

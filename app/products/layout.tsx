@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Floral Catalog — Handcrafted Bouquets & Single Stems",
+  title: "Catalog — Handcrafted Pipe Cleaner Flowers & Bouquets",
   description:
-    "Explore the Bloomy Bents floral collection: fresh peonies, velvety roses, sunflowers, and wildflower bouquets. Hand-tied and delivered fresh.",
+    "Explore the Bloomy Bents collection: everlasting pipe cleaner peonies, velvety roses, cheerful sunflowers, and wildflower bouquets sculpted by Sufia Ansari.",
   alternates: {
     canonical: "/products",
   },
   openGraph: {
-    title: "Floral Catalog — Bloomy Bents",
+    title: "Catalog — Bloomy Bents Pipe Cleaner Flowers",
     description:
-      "Explore the Bloomy Bents floral collection: fresh peonies, velvety roses, sunflowers, and wildflower bouquets.",
+      "Explore the Bloomy Bents collection: everlasting pipe cleaner peonies, velvety roses, cheerful sunflowers, and wildflower bouquets sculpted by Sufia Ansari.",
     url: "/products",
   },
 };

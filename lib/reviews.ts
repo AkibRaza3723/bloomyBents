@@ -12,7 +12,7 @@ export const reviews: Review[] = [
     name: "Priya S.",
     rating: 5,
     comment:
-      "Absolutely stunning flowers! The peonies were so fresh and lasted over a week. Will definitely order again. 🌸",
+      "The pipe cleaner peonies look so adorable and realistic! Best part is they will literally last forever on my vanity table. Sufia is so incredibly talented! 🌸",
     date: "September 2026",
   },
   {
@@ -20,7 +20,7 @@ export const reviews: Review[] = [
     name: "Aarav M.",
     rating: 5,
     comment:
-      "Ordered for my wife's birthday — she was speechless. Beautifully packaged with a handwritten note. 10/10!",
+      "Ordered a custom bouquet for my wife's birthday — she was amazed that it was handcrafted from pipe cleaners! Beautifully packaged with a handwritten note. 10/10!",
     date: "August 2026",
   },
   {
@@ -28,7 +28,7 @@ export const reviews: Review[] = [
     name: "Meera K.",
     rating: 5,
     comment:
-      "The wildflower bouquet was a work of art. Bloomy Bents puts so much love into every arrangement.",
+      "The wildflower bouquet is pure artistry. Every single chenille stem and petal has so much love and detail. Bloomy Bents is truly one-of-a-kind.",
     date: "August 2026",
   },
   {
@@ -36,7 +36,7 @@ export const reviews: Review[] = [
     name: "Rohan T.",
     rating: 5,
     comment:
-      "Quick response on WhatsApp, super easy to order, and the flowers were delivered fresh and fragrant. Highly recommend!",
+      "Quick response on WhatsApp and super easy to customize colors. The bouquet arrived safely and looks stunning. The fact that it never wilts is amazing!",
     date: "July 2026",
   },
   {
@@ -44,7 +44,7 @@ export const reviews: Review[] = [
     name: "Ananya R.",
     rating: 5,
     comment:
-      "Got the lavender bundle as a self-treat — absolutely worth it. My room smells divine. Love this small business!",
+      "Got the lavender bundle for my study desk — fuzzy, pastel, and soothing. Zero pollen, no maintenance, and stays cute every single day. Love Sufia's work!",
     date: "July 2026",
   },
 ];

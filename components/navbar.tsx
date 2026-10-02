@@ -134,7 +134,7 @@ export function Navbar() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <p className="text-center text-xs text-muted-foreground pt-2">
-              Boutique flowers crafted with love • Bloomy Bents
+              Handcrafted pipe cleaner blooms • Bloomy Bents
             </p>
           </div>
         </div>

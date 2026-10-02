@@ -11,7 +11,7 @@ export function Footer() {
             <span className="font-display text-xl font-semibold">Bloomy Bents</span>
           </div>
           <p className="text-sm text-background/60 leading-relaxed max-w-xs">
-            Handcrafted flowers made with love, one stem at a time. Every bouquet tells a story.
+            Handcrafted pipe cleaner flowers sculpted with love by Sufia Ansari. Everlasting blooms that never fade.
           </p>
         </div>
         <div>

@@ -137,12 +137,12 @@ export default async function ProductDetailPage(props: PageProps<"/products/[slu
               </div>
 
               <div className="bg-secondary/30 rounded-2xl p-4 sm:p-5 text-sm space-y-2 border border-border/40">
-                <p className="font-medium text-foreground text-xs sm:text-sm">Care Tips</p>
+                <p className="font-medium text-foreground text-xs sm:text-sm">Care & Keepsake Tips</p>
                 <ul className="text-muted-foreground space-y-1.5 text-xs">
-                  <li>✦ Keep in fresh, clean water</li>
-                  <li>✦ Trim stems at an angle every 2–3 days</li>
-                  <li>✦ Avoid direct sunlight and heat</li>
-                  <li>✦ Keep away from fruit (ethylene gas)</li>
+                  <li>✦ Never needs water or trimming — 100% everlasting!</li>
+                  <li>✦ Fully bendable: gently pose petals and stems anytime</li>
+                  <li>✦ Dust gently with a soft makeup brush or cool hairdryer</li>
+                  <li>✦ Keep in a dry spot to preserve vibrant colors</li>
                 </ul>
               </div>
             </div>
