@@ -35,8 +35,15 @@ export function Navbar() {
   }, [mobileOpen]);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/50">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <header
+      className={cn(
+        "fixed top-0 inset-x-0 z-50 transition-colors duration-200",
+        mobileOpen
+          ? "h-[100dvh] bg-background flex flex-col md:h-16 md:bg-background/85 md:backdrop-blur-md md:border-b md:border-border/50"
+          : "h-16 bg-background/85 backdrop-blur-md border-b border-border/50"
+      )}
+    >
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 w-full flex items-center justify-between shrink-0 border-b border-border/40 md:border-b-0">
         <Link href="/" className="flex items-center gap-2 group z-50">
           <Flower2 className="w-5 h-5 text-primary group-hover:rotate-12 transition-transform duration-300" />
           <span className="font-display text-lg sm:text-xl font-semibold tracking-wide text-foreground">
@@ -93,16 +100,9 @@ export function Navbar() {
       </nav>
 
       {/* Mobile Drawer Menu */}
-      <div
-        className={cn(
-          "fixed inset-0 top-16 bg-background/95 backdrop-blur-xl z-40 transition-all duration-300 flex flex-col md:hidden",
-          mobileOpen
-            ? "opacity-100 pointer-events-auto translate-y-0"
-            : "opacity-0 pointer-events-none -translate-y-4"
-        )}
-      >
-        <div className="flex-1 px-6 py-8 flex flex-col justify-between">
-          <ul className="space-y-4">
+      {mobileOpen && (
+        <div className="flex-1 w-full flex flex-col justify-between px-6 py-6 overflow-y-auto bg-background md:hidden">
+          <ul className="space-y-1">
             {links.map(({ href, label }) => {
               const isActive = pathname === href;
               return (
@@ -111,7 +111,7 @@ export function Navbar() {
                     href={href}
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "block text-2xl font-display font-medium py-3 border-b border-border/40 transition-colors",
+                      "block text-2xl font-display font-medium py-3.5 border-b border-border/40 transition-colors",
                       isActive
                         ? "text-primary"
                         : "text-foreground hover:text-primary"
@@ -124,7 +124,7 @@ export function Navbar() {
             })}
           </ul>
 
-          <div className="pt-6 space-y-3">
+          <div className="pt-6 pb-2 space-y-3">
             <Link
               href="/products"
               onClick={() => setMobileOpen(false)}
@@ -138,7 +138,7 @@ export function Navbar() {
             </p>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

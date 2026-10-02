@@ -90,7 +90,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-secondary shadow-2xl">
                 <Image
-                  src="/images/image.png"
+                  src="/images/hero2.png"
                   alt="Founder of Bloomy Bents"
                   fill
                   className="object-cover"
