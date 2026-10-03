@@ -18,7 +18,7 @@ export const reviews: Review[] = [
   {
     id: 2,
     name: "Aarav M.",
-    rating: 5,
+    rating: 3, 
     comment:
       "Ordered a custom bouquet for my wife's birthday — she was amazed that it was handcrafted from pipe cleaners! Beautifully packaged with a handwritten note. 10/10!",
     date: "August 2026",
@@ -26,7 +26,7 @@ export const reviews: Review[] = [
   {
     id: 3,
     name: "Meera K.",
-    rating: 5,
+    rating: 4, 
     comment:
       "The wildflower bouquet is pure artistry. Every single chenille stem and petal has so much love and detail. Bloomy Bents is truly one-of-a-kind.",
     date: "August 2026",

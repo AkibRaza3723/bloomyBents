@@ -55,7 +55,7 @@ export const products: Product[] = [
     id: 4,
     slug: "meadow-wildflower-bouquet",
     name: "Meadow Wildflower Bouquet",
-    price: 799,
+    price: 299,
     shortDesc: "A whimsical, everlasting mix of chenille lavender, daisies & foliage.",
     description:
       "Our Meadow Wildflower Bouquet is a playful, romantic arrangement inspired by countryside meadows. Every element — soft lavender sprigs, joyful white daisies, dainty yellow buttercups, and eucalyptus-style foliage — is hand-sculpted from fuzzy pipe cleaners by Sufia Ansari and hand-tied with rustic jute twine. A charming, zero-maintenance bouquet that adds cozy pastel warmth to any room.",
@@ -81,7 +81,7 @@ export const products: Product[] = [
     id: 6,
     slug: "garden-rose-blush-bundle",
     name: "Garden Rose Blush Bundle",
-    price: 999,
+    price: 399,
     shortDesc: "5 plush handcrafted garden roses in harmonious blush and ivory hues.",
     description:
       "A show-stopping arrangement of five handcrafted garden roses, individually sculpted from blush, peach, and soft ivory chenille stems. Each rose has dozens of hand-rolled petals for rich volume and fuzzy, tactile appeal. Wrapped in designer craft paper with luxury ribbon, this bundle is the ultimate everlasting gift for special celebrations, graduations, or a luxurious self-treat.",
@@ -107,7 +107,7 @@ export const products: Product[] = [
     id: 8,
     slug: "carnation-carnival",
     name: "Carnation Carnival",
-    price: 599,
+    price: 199,
     shortDesc: "Vibrant ruffled carnations hand-twisted in a burst of playful colours.",
     description:
       "The Carnation Carnival is a joyous explosion of color and craft. Ruffled, fluffy carnations hand-sculpted in coral, rosy red, buttery yellow, and cream chenille stems. Because each petal is supported by flexible craft wire, you can shape, fluff, or arrange the bunch to your liking. An upbeat, charming gift that symbolizes celebration and affectionate admiration.",
