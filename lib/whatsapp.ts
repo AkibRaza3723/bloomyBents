@@ -1,6 +1,6 @@
 import type { Product } from "./data";
 
-const WHATSAPP_NUMBER = "919883129407";
+const WHATSAPP_NUMBER = "918470951356"; 
 
 export function buildWhatsAppUrl(product: Product): string {
   const message = `Hi! I'd like to order the handcrafted *${product.name}* (₹${product.price}) from Bloomy Bents. Could you please share availability and crafting timeline? 🌸`;
