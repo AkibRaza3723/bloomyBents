@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ArrowRight, Flower2, Heart, Sparkles, Infinity as InfinityIcon } from "lucide-react";
+import { CalligraphyHeroTitle } from "@/components/calligraphy-hero-title";
 
 const faqs = [
   {
@@ -67,11 +68,11 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/75" />
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
             <p className="text-white/80 text-xs sm:text-sm font-medium tracking-[0.25em] sm:tracking-[0.3em] uppercase mb-2 sm:mb-3">
-              Bloomy Bents 
+              Made by Sufia Ansari
             </p>
-            <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white leading-none tracking-tight mb-3 sm:mb-4">
-              FLOWERS
-            </h1>
+            <div className="mb-2 sm:mb-3 -ml-2 sm:-ml-3">
+              <CalligraphyHeroTitle speed={2} bold gradient="white" />
+            </div>
             <p className="font-display text-lg sm:text-2xl md:text-3xl text-white/85 italic mb-6 sm:mb-8">
               Handcrafted Floral Art, made to last forever
             </p>
